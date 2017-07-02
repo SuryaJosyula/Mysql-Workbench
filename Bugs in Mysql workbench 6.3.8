@@ -1,8 +1,17 @@
-Unable to create new store procedures. 
-Solution :  Deprecate the version to 6.2.3 and open.
-
 In store procedures field value is taking null value?
-Solution :  I used mamp first to start MYSQL server which took 8889 as my port.MySQL is having many bigs here.
-I later tried it with the XAMP server for running my MYSQL Servers. It had all done a magic. Stored procedures are storing queires and everything works fine now.
+Unable to create new store procedures.?
 
+Solution:
 
+I used mamp first to start MYSQL server which took 8889 as my port.MySQL is having many bugs here.
+I later tried it with the XAMP server for running my MYSQL Servers. It had all done a magic. 
+Stored procedures are storing queires and everything works fine now.
+
+MySQL 1449 error : "The user specified as a definer ('root'@'%') does not exist"
+
+Solution: 
+
+If you've found following error while using mysql database:
+The user specified as a definer ('root'@'%') does not exist
+Then you can solve it by using following :
+grant all on *.* to 'root'@'%' identified by 'password' with grant option; 
